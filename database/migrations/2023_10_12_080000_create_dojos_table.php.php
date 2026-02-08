@@ -9,8 +9,8 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('dojos', function (Blueprint $table) {
-            $table->engine = 'InnoDB'; // heel belangrijk voor foreign keys
-            $table->id();              // unsignedBigInteger automatisch
+            $table->engine = 'InnoDB';
+            $table->id();
             $table->string('name');
             $table->text('description');
             $table->string('location');

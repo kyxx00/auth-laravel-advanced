@@ -9,7 +9,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('ninjas', function (Blueprint $table) {
-            $table->engine = 'InnoDB'; // verplicht voor foreign key
+            $table->engine = 'InnoDB';
             $table->id();
             $table->string('name');
             $table->text('bio');
